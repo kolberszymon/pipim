@@ -1,0 +1,39 @@
+<!doctype html>
+
+
+<head>
+    
+    <title>HLS Tutorial Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    
+      <script src="https://hls-js.netlify.app/dist/hls.js"></script>
+        
+    <label for="film">Choose a film: </label>
+      <select name="films" id="films">
+          <option value="https://bitdash-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8">Parkour</option>
+          <option value="https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8">Blender Fight Animation</option>
+          <option value="https://mnmedias.api.telequebec.tv/m3u8/29880.m3u8">Rock Documentary</option>
+      </select>        
+
+     <div id="currentLevelControl" style="display: inline;">
+         
+     </div>
+     
+     
+      <center>
+          <h1>Hls.js demo - Szymon Kolber</h1>
+          <video height="600" id="video" controls></video>
+      </center>
+      
+      <div class="videoInformation">
+          Video Information
+      </div>
+
+      <script src="hlsconfscript.js"></script>
+</body>
